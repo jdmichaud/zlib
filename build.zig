@@ -56,7 +56,7 @@ pub fn build(b: *std.Build) void {
     });
     const output_name = b.fmt("libz{s}.{s}", .{
         dynamic_lib.root_module.resolved_target.?.result.dynamicLibSuffix(),
-        "1.3.1",
+        "1.3.2",
     });
     const install_step = b.addInstallArtifact(dynamic_lib, .{
         .dest_dir = .{
